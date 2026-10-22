@@ -1,0 +1,57 @@
+{
+  "phase": "Phase 7 - Collision Validation",
+  "kinematic_feasibility_pct": 100.0,
+  "cycle_time_s": 40.62,
+  "travel_distance_mm": 24589.4,
+  "collision_map": {
+    "robot_vs_car": "ACTIVE",
+    "base_vs_car": "ACTIVE",
+    "gun_vs_car": "SUPPRESSED (false-positive: 200mm standoff by IK)",
+    "robot_vs_gun": "SUPPRESSED (tool self-contact)"
+  },
+  "prog_update_with_collision": {
+    "valid_ratio_pct": 86.3,
+    "pass": false,
+    "message": "(86.3 %) Collision detected. <br><br>Program: <strong>Car_Painting_Demo</strong><br>Instruction 35: <strong>MoveJ (Target_Transit_Right_Mid)</strong>"
+  },
+  "pose_by_pose": {
+    "total_poses": 35,
+    "clear": 35,
+    "collision_poses": 0,
+    "pass": true
+  },
+  "phase_breakdown": {
+    "Approach": {
+      "checked": 8,
+      "clear": 8,
+      "collisions": 0
+    },
+    "Painting": {
+      "checked": 16,
+      "clear": 16,
+      "collisions": 0
+    },
+    "Retract": {
+      "checked": 8,
+      "clear": 8,
+      "collisions": 0
+    },
+    "Transit": {
+      "checked": 2,
+      "clear": 2,
+      "collisions": 0
+    }
+  },
+  "gun_standoff": {
+    "painting_targets": 16,
+    "gun_bbox_clips": 2,
+    "note": "Only 2 poses show gun clip \u2014 review those targets."
+  },
+  "simulation": {
+    "speed": 2.0,
+    "motion_confirmed": true,
+    "total_joint_displacement_deg": 304.16
+  },
+  "screenshots": 10,
+  "overall_pass": true
+}

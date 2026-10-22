@@ -179,9 +179,3 @@ Robotics_Assessment/
 ```
 
 ---
-
-## Contact
-
-**Sanket Gombi**  
-KLE Technological University, Hubballi  
-Assessment submission for Yuktii AI Labs – Robotic Simulation Engineer Internship

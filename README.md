@@ -1,12 +1,4 @@
 # Robotic Car Painting Cell Simulation
-
-**Candidate:** Sanket Gombi  
-**College:** KLE Technological University, Hubballi  
-**Assessment:** Yuktii AI Labs – Robotic Simulation Engineer Internship  
-**Date:** October 2026
-
----
-
 ## Project Title
 
 **Automated Robotic Car-Body Painting Cell — RoboDK Simulation**

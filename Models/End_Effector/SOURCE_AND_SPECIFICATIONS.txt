@@ -1,0 +1,61 @@
+================================================================================
+PAINTING END-EFFECTOR SPECIFICATIONS & TCP DOCUMENTATION
+================================================================================
+
+Project: Robotic Car Painting Cell Simulation
+Assessment: Yuktii AI Labs Robotics Simulation Assessment
+Target Robot: ABB IRB 6700-150/3.20 LeanID (6-Axis)
+
+1. Model Identification:
+   - Tool Name: Industrial Spray Paint Gun (End-Effector)
+   - Primary RoboDK Tool: Models/End_Effector/Paint_Gun.tool
+   - 3D CAD Mesh: Models/End_Effector/Paint_Gun.stl
+   - Origin: Official RoboDK Industrial Library (`Library/01-Robot painting/Parts/Paint-gun.tool`)
+   - Geometry: Industrial pneumatic paint applicator with mounting bracket,
+               fluid manifold, atomizer body, and circular discharge nozzle.
+
+2. Physical Geometry & Bounding Box:
+   - Total Triangles: 1,744
+   - Total Vertices: 5,232
+   - Flange Interface: Z = 0.00 mm (aligned with robot tool flange ISO 9409-1)
+   - Bounding Dimensions:
+     * Width  (X): 203.18 mm (range: [-101.60, +101.59] mm)
+     * Depth  (Y): 279.73 mm (range: [-228.94,  +50.79] mm)
+     * Length (Z): 471.54 mm (range: [-146.49, +325.06] mm)
+   - Nozzle Tip Physical Coordinates:
+     * X = 0.00 mm
+     * Y = 0.00 mm
+     * Z = 325.06 mm
+   - Nozzle Tip Surface Normal: [0.000, 0.000, +1.000]
+
+3. Tool Center Point (TCP) Definition:
+   - Reference: Robot Mounting Flange Frame (Tool0)
+   - TCP Position at Nozzle Tip:
+     * X_tcp = 0.00 mm
+     * Y_tcp = 0.00 mm
+     * Z_tcp = 325.06 mm
+   - TCP Orientation:
+     * Rx = 0.0 deg
+     * Ry = 0.0 deg
+     * Rz = 0.0 deg
+   - Transformation Matrix (Flange to TCP):
+     [ 1.000,  0.000,  0.000,    0.000 ]
+     [ 0.000,  1.000,  0.000,    0.000 ]
+     [ 0.000,  0.000,  1.000,  325.060 ]
+     [ 0.000,  0.000,  0.000,    1.000 ]
+
+4. Spray Direction & Pattern:
+   - Spray Ejection Axis: Tool +Z axis (Vector: [0, 0, 1] relative to TCP)
+   - Ejection Direction: Directly along the tool centerline pointing away
+     from the robot flange toward the target workpiece surface.
+   - Fan Orientation: The X-Y plane of the tool frame defines the spray
+     fan pattern width and transverse orientation.
+   - Standoff Distance (for painting trajectories): Recommended 150 - 250 mm
+     normal to the vehicle surface.
+
+5. Attachment & Motion Verification:
+   - Attached as an ItemType 4 (ITEM_TYPE_TOOL) under the robot item in
+     the station tree hierarchy.
+   - Motion tested by articulating robot joints across the operational envelope
+     and confirming that the gun moves synchronously with the robot flange.
+================================================================================

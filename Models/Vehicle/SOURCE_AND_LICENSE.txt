@@ -1,0 +1,53 @@
+================================================================================
+VEHICLE CAD MODEL PROVENANCE & SPECIFICATIONS
+================================================================================
+
+Project: Robotic Car Painting Cell Simulation
+Assessment: Yuktii AI Labs Robotics Simulation Assessment
+Target Dimensions: Length ~4800 mm, Width ~1900 mm, Height ~1600 mm
+
+1. Model Identification:
+   - Name: Automotive Car Body-in-White (BIW) Chassis / Frame
+   - Type: Full vehicle body shell (BIW) including side panels, pillars, roof,
+           hood structure, trunk section, wheel arches, and floor pan.
+   - Primary File: Models/Vehicle/Car_Body.stl
+   - Original Raw File: Models/Vehicle/Car_Frame_Original.stl
+
+2. Source:
+   - Origin: Official RoboDK Industrial Simulation Library
+   - Path: RoboDK/Library/Add-in - Collision-free path - Spot Welding with Comau/Parts/Car-Frame.stl
+   - Producer: RoboDK Inc. (RoboDK simulation asset library)
+   - Verified in industrial automotive spot welding and painting cell demonstrations.
+
+3. License:
+   - License: RoboDK Application Library Asset
+   - Permitted Use: Included with official RoboDK software installation for
+     simulation, educational, and evaluation purposes.
+
+4. Bounding Dimensions Before Scaling (Raw Model):
+   - Coordinate Orientation in Raw File:
+     * Raw X axis: Lateral / Width = 1,740.00 mm (range: -870.00 to +870.00 mm)
+     * Raw Y axis: Longitudinal / Length = 6,000.00 mm (range: -3,020.00 to +2,980.00 mm)
+     * Raw Z axis: Vertical / Height = 1,850.00 mm (range: -450.00 to +1,400.00 mm)
+   - Triangle Count: 46,541
+   - Vertex Count: 139,623
+
+5. Transformation & Scaling Applied:
+   - Target Vehicle Length: 4,800.00 mm
+   - Uniform Scale Factor: s = 4800.0 / 6000.0 = 0.8000 (80%)
+     * Note: Strict uniform scaling applied across all 3 axes to maintain
+       true automotive proportions without artificial stretching.
+   - Coordinate Transformation:
+     * Rotated -90 degrees around Z axis so that:
+       - X = Longitudinal (vehicle length)
+       - Y = Lateral (vehicle width)
+       - Z = Vertical (vehicle height)
+     * Shifted Z so lowest vertex sits exactly at floor level (Z = 0.00 mm).
+     * Centered symmetrically along X (X_center = 0.00 mm) and Y (Y_center = 0.00 mm).
+
+6. Dimensions After Uniform Scaling (Car_Body.stl):
+   - Length (X axis): 4,800.00 mm (range: -2,400.00 mm to +2,400.00 mm)
+   - Width  (Y axis): 1,392.00 mm (range: -696.00 mm to +696.00 mm)
+   - Height (Z axis): 1,480.00 mm (range: 0.00 mm to +1,480.00 mm)
+   - Aspect Ratio: Fully preserved (identical to original automotive design).
+================================================================================

@@ -153,7 +153,7 @@ python3 Scripts/validate_collision_simulation.py  # Phase 7: Collision check
 ## File Structure
 
 ```
-Yuktii_Robotics_Assessment/
+Robotics_Assessment/
 ├── README.md                         ← This file
 ├── Technical_Report.pdf              ← 4-page professional report
 ├── Simulation_Files/
